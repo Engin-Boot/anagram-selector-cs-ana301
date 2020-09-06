@@ -10,8 +10,8 @@ namespace Anagram
             char[] wordArr1=word1.ToLower().ToCharArray();
             char[] wordArr2=word2.ToLower().ToCharArray();
             
-            Arrays.Sort(wordArr1);
-            Arrays.Sort(wordArr2);
+            Array.Sort(wordArr1);
+            Array.Sort(wordArr2);
             
             string wordOne=new string(wordArr1);
             string wordSec=new string(wordArr2);
@@ -23,7 +23,7 @@ namespace Anagram
         public List<string> SelectAnagrams(string word, List<string> candidates) {
             //Insert the correct implementation here
             
-            List<String> ans=new List<>();
+            List<string> ans=new List<>();
             for(int i=0;i<candidates.Length();i++){
                 if(WordPairIsAnagram(word,candidates[i]))
                     ans.add(candidates[i]);
