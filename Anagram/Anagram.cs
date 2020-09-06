@@ -24,7 +24,7 @@ namespace Anagram
             //Insert the correct implementation here
             
             List<string> ans=new List<string>();
-            for(int i=0;i<candidates.Count();i++){
+            for(int i=0;i<candidates.Count;i++){
                 if(WordPairIsAnagram(word,candidates[i]))
                     ans.Add(candidates[i]);
             }
