@@ -23,10 +23,10 @@ namespace Anagram
         public List<string> SelectAnagrams(string word, List<string> candidates) {
             //Insert the correct implementation here
             
-            List<string> ans=new List<>();
-            for(int i=0;i<candidates.Length();i++){
+            List<string> ans=new List<string>();
+            for(int i=0;i<candidates.Count();i++){
                 if(WordPairIsAnagram(word,candidates[i]))
-                    ans.add(candidates[i]);
+                    ans.Add(candidates[i]);
             }
             
             return ans;
